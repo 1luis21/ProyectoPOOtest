@@ -5,8 +5,11 @@ import path from 'path';
 import mongoose from 'mongoose';
 
 const app = express();
-const uri = 'mongodb://localhost:27017/proyectopooDB';
+//const uri = 'mongodb://localhost:27017/proyectopooDB';
 const options = {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true};
+//conexion en la nube
+const uri = 'mongodb+srv://user_pokedex:Ciel600ml.@pokedex-2dr1v.mongodb.net/pokedexDB?retryWrites=true&w=majority';
+
 
 //conexion a DB
 mongoose.connect(uri, options).then(
