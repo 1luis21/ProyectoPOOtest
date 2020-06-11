@@ -2,9 +2,8 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const notaSchema = new Schema({
-    pokemonID: String,
-    nombre: {type: String, required: [true, 'Nombre obligatorio']},
     numdex: String,
+    nombre: {type: String, required: [true, 'Nombre obligatorio']},
     tipo: String,
     debilidad: String,
     region: String,
